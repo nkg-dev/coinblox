@@ -11,7 +11,7 @@ function App() {
 	};
 
 	return (
-		<div className="dark:bg-radix-sand-dark-1">
+		<div className="bg-radix-sand-1 dark:bg-radix-sand-dark-1">
 			<div className="navbar">
 				<Navbar />
 			</div>
