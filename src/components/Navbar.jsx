@@ -16,7 +16,7 @@ const Navbar = () => {
 			<div className={styles.logo}>
 				<Link to="/">Coinblox</Link>
 			</div>
-			<div>
+			<nav>
 				<Root className={styles.root}>
 					<Item className={styles.item}>
 						<Link to="/">Home</Link>
@@ -31,7 +31,7 @@ const Navbar = () => {
 						<Link to="/news">News</Link>
 					</Item>
 				</Root>
-			</div>
+			</nav>
 		</div>
 	);
 };
