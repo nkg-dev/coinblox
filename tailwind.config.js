@@ -5,7 +5,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Lexend', ...defaultTheme.fontFamily.sans],
+				sans: ['Outfit', ...defaultTheme.fontFamily.sans],
 			},
 			colors: {
 				// Step & Use Case for Radix UI Colors
