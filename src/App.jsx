@@ -15,7 +15,7 @@ function App() {
 			<div className="navbar">
 				<Navbar />
 			</div>
-			<div className="main"></div>
+			<main className="main"></main>
 			<div className="footer"></div>
 		</div>
 	);
