@@ -9,6 +9,7 @@ import {
 	CryptoDetails,
 	Cryptocurrencies,
 	News,
+	Footer,
 } from './components';
 
 function App() {
@@ -40,7 +41,7 @@ function App() {
 					</Routes>
 				</Layout>
 			</main>
-			<div className="footer"></div>
+			<Footer />
 		</div>
 	);
 }
