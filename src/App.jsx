@@ -1,8 +1,15 @@
 // import './App.css';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route, Link, Routes } from 'react-router-dom';
 import { Layout, Typography, Space } from 'antd';
 import { AntDesignOutlined } from '@ant-design/icons';
-import { Navbar } from './components';
+import {
+	Navbar,
+	Homepage,
+	Exchanges,
+	CryptoDetails,
+	Cryptocurrencies,
+	News,
+} from './components';
 
 function App() {
 	const styles = {
@@ -15,7 +22,24 @@ function App() {
 			<div className="navbar">
 				<Navbar />
 			</div>
-			<main className="main"></main>
+			<main className="main">
+				<Layout>
+					<Routes>
+						<Route exact path="/" element={<Homepage />}></Route>
+					</Routes>
+					<Routes>
+						<Route exact path="exchanges" element={<Exchanges />}></Route>
+					</Routes>
+					<Routes>
+						<Route exact path="cryptocurrencies" element={<Cryptocurrencies />}>
+							<Route exact path=":coindId" element={<CryptoDetails />} />
+						</Route>
+					</Routes>
+					<Routes>
+						<Route exact path="news" element={<News />}></Route>
+					</Routes>
+				</Layout>
+			</main>
 			<div className="footer"></div>
 		</div>
 	);
