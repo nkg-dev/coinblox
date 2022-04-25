@@ -23,13 +23,13 @@ const Navbar = () => {
 						<Link to="/">Home</Link>
 					</Item>
 					<Item className={styles.item}>
-						<Link to="/crypocurrencies">Cryptocurrencies</Link>
+						<Link to="cryptocurrencies">Cryptocurrencies</Link>
 					</Item>
 					<Item className={styles.item}>
-						<Link to="/exchanges">Exchanges</Link>
+						<Link to="exchanges">Exchanges</Link>
 					</Item>
 					<Item className={styles.item}>
-						<Link to="/news">News</Link>
+						<Link to="news">News</Link>
 					</Item>
 				</Root>
 			</nav>
